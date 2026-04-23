@@ -30,12 +30,12 @@
 // -----------------------------------------------------------------------------------------
 // |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | = |
 // | CTRL |     |     |     |     |     |   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |  1  | std |     |     |     |   |     |     |     |     |     | RSHFT|
+// | SHFT |  1  | std |     |     |     |   |     |     |     |     |  \  | RSHFT|
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp GRAVE  &kp N1       &kp N2        &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp EQUAL
    &kp LCTRL  &trans       &trans        &trans       &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LEFT_BRACE &kp RIGHT_BRACE
-   &kp LSHFT  &kp N1     &studio_unlock  &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &kp RSHFT
+   &kp LSHFT  &kp N1     &studio_unlock  &trans       &trans       &trans         &trans   &trans   &trans &trans    &kp BSLH &kp RSHFT
                                     &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
@@ -45,13 +45,13 @@
 // -----------------------------------------------------------------------------------------
 // |  `   |     |     |     |     |     |   |     |     |     |     |  -  | DEL  |
 // | CTRL |     |     |     |     | VOL+|   | LFT | DWN |  UP | RGT |     |      |
-// | SHFT |     |     | PREV| NEXT| VOL-|   |     |     |     |     |  PIPE | RSHFT|
-//                    | GUI | ALT | SPC |   | ENT |     | ALT |
+// | SHFT |     |     | PREV| NEXT| VOL-|   |     |     |     |     |  \  | RSHFT|
+//                    | GUI | ALT | SPC |   | C_PP|     | ALT |
                         bindings = <
    &kp GRAVE  &trans   &trans   &trans   &trans   &trans      &trans   &trans   &trans   &trans   &kp MINUS   &kp DEL
    &kp LCTRL &trans   &trans   &trans   &trans   &kp C_VOL_UP   &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT   &kp LEFT_BRACKET   &kp RIGHT_BRACKET
-   &kp LSHFT &trans   &trans   &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &trans   &trans   &trans   &trans   &kp PIPE   &kp RSHFT
-                             &kp LGUI &kp LALT   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp LSHFT &trans   &trans   &kp C_PREV   &kp C_NEXT   &kp C_VOL_DN   &trans   &trans   &trans   &trans   &kp BSLH   &kp RSHFT
+                             &kp LGUI &kp LALT   &kp SPACE   &kp C_PP   &trans    &kp RALT
                         >;
                 };
         };
